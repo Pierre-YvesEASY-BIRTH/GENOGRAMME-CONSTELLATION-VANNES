@@ -1,61 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Génogramme Constellation Vannes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Génogramme & Constellation Systémique Vannes | Thérapeute</title>
+
+<meta name="description" content="Génogramme et constellation systémique individuelle à Vannes. Approche thérapeutique profonde. RDV par SMS au 07 82 82 47 90.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ACCESSIBILITÉ */
+.skip-link{
+position:absolute;
+top:-40px;
+left:0;
+background:#000;
+color:#fff;
+padding:10px;
+z-index:1000;
+}
+.skip-link:focus{top:0;}
+
+/* BASE */
+body{
+margin:0;
+font-family:Poppins;
+background:#f4f7fb;
+color:#222;
+line-height:1.6;
+}
+
+/* HERO */
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600");
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+header h1{font-size:40px;}
+
+/* SECTIONS */
+section{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+opacity:0;
+transform:translateY(30px);
+transition:0.8s;
+}
+
+section.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* BOUTONS */
+.btn{
+display:inline-block;
+background:#6a5acd;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+margin-top:15px;
+}
+
+/* AUDIO */
+.audio-btn{
+margin-top:10px;
+background:#222;
+color:white;
+border:none;
+padding:10px;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* FLOAT SMS */
+.sms-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+background:#222;
+color:white;
+}
+
+</style>
+
 </head>
+
 <body>
-    <a href="#maincontent" class="skip-link">Skip to main content</a>
 
-    <header>
-        <h1>Génogramme Constellation Vannes</h1>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#about" aria-label="Learn more about us">About</a></li>
-                <li><a href="#services" aria-label="Our services">Services</a></li>
-                <li><a href="#contact" aria-label="Contact us">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
-    <main id="maincontent">
-        <h2>Welcome to Our Project</h2>
-        <p>We aim to explore family relationships and dynamics.</p>
-        <section id="about">
-            <h3>About Us</h3>
-            <p>We provide insights into generational ties.</p>
-        </section>
-        <section id="services">
-            <h3>Our Services</h3>
-            <p>From workshops to consultations.</p>
-        </section>
-        <section id="contact">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:info@example.com" aria-label="Email us">info@example.com</a></p>
-        </section>
-    </main>
+<header>
+<div>
 
-    <footer>
-        <p>&copy; 2026 Pierre-YvesEASY-BIRTH. All rights reserved.</p>
-    </footer>
+<h1>Génogramme & Constellation Systémique Vannes</h1>
 
-    <style>
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #fff;
-            color: #000;
-            padding: 8px;
-            z-index: 1000;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-    </style>
+<p>
+RDV par SMS au <strong>07 82 82 47 90</strong>
+</p>
+
+<a href="sms:+33782824790" class="btn">📩 Prendre RDV</a>
+
+</div>
+</header>
+
+<main id="main">
+
+<section>
+<h2>Présentation</h2>
+
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
+
+<div class="card">
+
+<p>
+Le génogramme et la constellation systémique permettent d’explorer les liens familiaux,
+de comprendre les schémas inconscients et de libérer les blocages émotionnels.
+</p>
+
+</div>
+</section>
+
+<section>
+<h2>Votre thérapeute</h2>
+
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
+
+<div class="card">
+
+<p>
+Je vous accompagne dans un travail en profondeur, respectueux et personnalisé,
+afin de mettre en lumière les dynamiques familiales et favoriser un réalignement intérieur durable.
+</p>
+
+<p>
+Chaque séance est un espace d’écoute, de compréhension et de transformation.
+</p>
+
+</div>
+</section>
+
+<section>
+<h2>Bienfaits</h2>
+
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
+
+<div class="card">
+
+✔ Libération émotionnelle<br>
+✔ Compréhension des schémas répétitifs<br>
+✔ Apaisement des relations<br>
+✔ Clarté intérieure
+
+</div>
+</section>
+
+<section id="rdv">
+<h2>Prendre rendez-vous</h2>
+
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
+
+<div class="card">
+
+📩 SMS au <strong>07 82 82 47 90</strong><br><br>
+
+Merci de préciser :<br>
+- Votre nom<br>
+- Votre adresse<br>
+- Motif<br>
+- Disponibilités<br><br>
+
+IBAN transmis après confirmation.
+
+</div>
+</section>
+
+<section>
+<h2>Localisation</h2>
+
+<iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+Vannes&output=embed"
+width="100%" height="350"></iframe>
+
+</section>
+
+</main>
+
+<footer>
+
+Espaces Horizon – Vannes<br>
+SIRET : 39256443100022
+
+</footer>
+
+<a href="sms:+33782824790" class="sms-float">📩 SMS</a>
+
+<script>
+
+/* AUDIO ACCESSIBILITÉ */
+function lireTexte(btn){
+let texte = btn.parentElement.innerText;
+let speech = new SpeechSynthesisUtterance(texte);
+speech.lang="fr-FR";
+speechSynthesis.speak(speech);
+}
+
+/* ANIMATION SCROLL */
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("visible");
+}
+});
+});
+
+</script>
 
 </body>
 </html>
