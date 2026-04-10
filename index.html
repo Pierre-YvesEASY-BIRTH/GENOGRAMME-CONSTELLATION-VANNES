@@ -6,23 +6,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Constellation Systémique Vannes | Génogramme Vannes | Thérapeute</title>
+<title>Constellation Systémique Vannes | Génogramme Vannes | Thérapeute Morbihan</title>
 
 <meta name="description" content="Génogramme et constellation systémique individuelle à Vannes. Thérapeute spécialisé en accompagnement transgénérationnel. RDV par SMS au 07 82 82 47 90.">
 
 <link rel="canonical" href="https://votre-nom.github.io/GENOGRAMME-CONSTELLATION-VANNES/">
 
+<meta name="geo.region" content="FR-56">
+<meta name="geo.placename" content="Vannes">
+<meta name="geo.position" content="47.658236;-2.760847">
+
+<!-- SCHEMA SEO -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"name": "Constellation Systémique Vannes",
+"telephone": "+33782824790",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "25 rue Pierre Ache",
+"addressLocality": "Vannes",
+"postalCode": "56000",
+"addressCountry": "FR"
+},
+"areaServed": ["Vannes","Arradon","Saint-Avé","Baden","Morbihan"]
+}
+</script>
+
 <style>
 
 /* ACCESSIBILITÉ */
 .skip-link{
-position:absolute;
-top:-40px;
-left:0;
-background:#000;
-color:#fff;
-padding:10px;
-z-index:1000;
+position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:10px;z-index:1000;
 }
 .skip-link:focus{top:0;}
 
@@ -36,9 +52,11 @@ color:#222;
 /* HERO */
 header{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600");
 background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -46,7 +64,18 @@ text-align:center;
 color:white;
 }
 
-header h1{font-size:40px;}
+header h1{font-size:42px;}
+header p{font-size:1.2em;}
+
+.btn{
+background:#6a5acd;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
 
 /* SECTIONS */
 section{
@@ -62,10 +91,8 @@ border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-/* IMAGE THÉRAPEUTE */
-.profil{
-text-align:center;
-}
+/* PROFIL */
+.profil{text-align:center;}
 .profil img{
 width:220px;
 height:220px;
@@ -74,19 +101,9 @@ object-fit:cover;
 margin-bottom:20px;
 }
 
-/* BOUTONS */
-.btn{
-background:#6a5acd;
-color:white;
-padding:14px 28px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-margin-top:15px;
-}
-
+/* AUDIO */
 .audio-btn{
-margin-top:10px;
+margin-bottom:15px;
 background:#222;
 color:white;
 border:none;
@@ -95,7 +112,7 @@ border-radius:20px;
 cursor:pointer;
 }
 
-/* FLOAT */
+/* FLOAT SMS */
 .sms-float{
 position:fixed;
 bottom:20px;
@@ -105,6 +122,7 @@ color:white;
 padding:15px 20px;
 border-radius:50px;
 text-decoration:none;
+font-weight:bold;
 }
 
 /* FOOTER */
@@ -141,26 +159,23 @@ padding:40px;
 
 <section>
 <h2>Présentation</h2>
-
 <div class="card">
 <p>
-Le génogramme et la constellation systémique à Vannes permettent de comprendre les schémas familiaux,
-les blocages émotionnels et les transmissions inconscientes.
+Le génogramme et la constellation systémique permettent d’explorer les dynamiques familiales,
+les blocages émotionnels et les transmissions transgénérationnelles.
 </p>
 </div>
 </section>
 
 <section>
 <h2>Votre thérapeute</h2>
-
 <div class="card profil">
 
-<!-- AJOUTEZ VOTRE PHOTO ICI -->
-<img src="images/votre-photo.jpg" alt="Thérapeute génogramme Vannes">
+<img src="images/votre-photo.jpg" alt="Thérapeute Vannes">
 
 <p>
-Préalablement ostéopathe pendant une trentaine d'années, je me suis spécialisé dorénavant en tant que thérapeute en génogramme et constellation systémique individuelle à Vannes,
-je vous accompagne dans un travail profond de compréhension et de transformation.
+Plus de 30 ans d'expérience dans l'accompagnement thérapeutique.
+Spécialisation en génogramme et constellation systémique individuelle à Vannes.
 </p>
 
 </div>
@@ -169,23 +184,54 @@ je vous accompagne dans un travail profond de compréhension et de transformatio
 <section id="rdv">
 <h2>Prendre rendez-vous</h2>
 
-<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter les instructions</button>
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
 
 <div class="card">
 
 📩 Envoyer un SMS au <strong>07 82 82 47 90</strong><br><br>
 
 Merci de préciser :<br>
-- Votre nom <br>
-- Votre adresse précise<br>
+- Votre nom<br>
+- Votre adresse<br>
 - Motif de consultation<br>
-- Nom et Date de votre dernière consultation avec votre psychologue<br>
-- Date dernière consultation avec votre médecin traitant<br><br>
+- Dernière consultation psychologue<br>
+- Dernière consultation médecin traitant<br><br>
 
-Un Questionnaire sous format Word ou Pdf vous sera communiqué après la prise de RDV  
-afin de préparer la consultation en amont.  
-Règlement à privilégier par virement bancaire.  
-IBAN transmis après confirmation du RDV.
+Un Questionnaire à remplir en préalable de votre RDV, vous sera communiqué après la confirmation de votre RDV. 
+
+Règlement par virement bancaire privilégié.  
+IBAN transmis après réservation et confirmation de votre RDV.
+
+</div>
+</section>
+
+<section id="tarifs">
+<h2>Tarifs</h2>
+
+<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter les tarifs</button>
+
+<div class="card">
+
+<p>
+<strong>Constellation systémique individuelle</strong><br>
+Durée : 50 minutes<br>
+Tarif : <strong>80 €</strong>
+</p>
+
+<br>
+
+<p>
+<strong>Séance de génogramme</strong><br>
+Durée : environ 2h30<br>
+Tarif : <strong>150 €</strong>
+</p>
+
+<br>
+
+<p>
+Règlement par virement bancaire privilégié.<br>
+IBAN transmis après confirmation du rendez-vous.
+</p>
 
 </div>
 </section>
@@ -197,39 +243,41 @@ IBAN transmis après confirmation du RDV.
 
 <div class="card">
 
-Vous êtes reçu dans un espace accessible aussi aux personnes à mobilité réduite dénommé :  
-<strong>ESPACES HORIZON</strong> situé en rez-de-jardin – Appartement 006 – Résidence Horizon –  
-<strong>25 rue Pierre Ache à Vannes</strong>.
+<strong>ESPACES HORIZON</strong><br>
+Rez-de-jardin – Appartement 006<br>
+Résidence Horizon<br>
+<strong>25 rue Pierre Ache – Vannes</strong>
 
 </div>
 
-<iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+Vannes&output=embed"
-width="100%" height="350"></iframe>
+<iframe src="https://www.google.com/maps?q=25+rue+Pierre+Ache+Vannes&output=embed"></iframe>
 
 </section>
 
 <section>
-<h2>FAQ – Constellation à Vannes</h2>
+<h2>FAQ – Thérapeute Vannes</h2>
 
 <div class="card">
 
 <strong>Qu’est-ce qu’une constellation systémique ?</strong><br>
-Une méthode thérapeutique permettant de comprendre les dynamiques familiales inconscientes.<br><br>
+Approche permettant de comprendre les dynamiques familiales inconscientes.<br><br>
 
 <strong>Pourquoi faire un génogramme ?</strong><br>
-Identifier les répétitions transgénérationnelles et libérer certains blocages.<br><br>
+Identifier les répétitions transgénérationnelles.<br><br>
 
 <strong>Où consulter à Vannes ?</strong><br>
-Au cabinet Espaces Horizon – Résidence Horizon – 25 rue Pierre Ache - 56000 Vannes.
+Espaces Horizon – 25 rue Pierre Ache - VANNES.
 
 </div>
+
 </section>
 
 </main>
 
 <footer>
 
-Génogramme & Constellation Vannes – Espaces Horizon<br>
+Constellation Systémique Vannes – Espaces Horizon<br>
+© 2026
 
 </footer>
 
@@ -237,9 +285,14 @@ Génogramme & Constellation Vannes – Espaces Horizon<br>
 
 <script>
 function lireTexte(btn){
-let texte = btn.parentElement.innerText;
+let zone = btn.nextElementSibling;
+let texte = zone.innerText;
+
 let speech = new SpeechSynthesisUtterance(texte);
 speech.lang="fr-FR";
+speech.rate=0.95;
+
+speechSynthesis.cancel();
 speechSynthesis.speak(speech);
 }
 </script>
