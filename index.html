@@ -6,59 +6,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Constellation Systémique Vannes | Génogramme Vannes | Thérapeute Morbihan</title>
+<title>M. BIHAN – Constellation Systémique Vannes | Génogramme | Thérapeute Morbihan</title>
 
-<meta name="description" content="M. BIHAN – Thérapeute en constellation systémique et génogramme à Vannes. Accompagnement transgénérationnel. RDV rapide par SMS au 07 82 82 47 90. Cabinet Espaces Horizon.">
+<meta name="description" content="Thérapeute en constellation systémique et génogramme à Vannes. Accompagnement transgénérationnel. RDV rapide par SMS. Cabinet Espaces Horizon – Morbihan.">
 
 <link rel="canonical" href="https://votre-nom.github.io/GENOGRAMME-CONSTELLATION-VANNES/">
 
 <meta name="geo.region" content="FR-56">
 <meta name="geo.placename" content="Vannes">
-<meta name="geo.position" content="47.658236;-2.760847">
 
-<!-- SEO SCHEMA -->
+<!-- SCHEMA SEO LOCAL -->
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "LocalBusiness",
-"name": "M. BIHAN – Constellation systémique Vannes",
-"image": "https://votre-nom.github.io/images/therapeute.jpg",
-"telephone": "+33782824790",
-"address": {
-"@type": "PostalAddress",
-"streetAddress": "25 rue Pierre Ache",
-"addressLocality": "Vannes",
-"postalCode": "56000",
-"addressCountry": "FR"
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"M. BIHAN – Constellation systémique Vannes",
+"image":"https://votre-nom.github.io/images/therapeute.jpg",
+"telephone":"+33782824790",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"25 rue Pierre Ache",
+"addressLocality":"Vannes",
+"postalCode":"56000",
+"addressCountry":"FR"
 },
-"areaServed": ["Vannes","Arradon","Saint-Avé","Baden","Ploeren","Séné","Theix-Noyalo","Morbihan"],
-"priceRange": "80€-150€"
+"areaServed":[
+"Vannes","Arradon","Saint-Avé","Baden","Ploeren","Séné","Theix-Noyalo","Morbihan"
+],
+"priceRange":"80€-150€"
 }
 </script>
 
 <style>
 
-/* ACCESSIBILITÉ */
-.skip-link{
-position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:10px;z-index:1000;
-}
-.skip-link:focus{top:0;}
-
+/* STYLE GLOBAL */
 body{
 margin:0;
-font-family:Arial;
+font-family:'Segoe UI',sans-serif;
 background:#f4f7fb;
 color:#222;
+scroll-behavior:smooth;
 }
 
-/* HERO */
+/* HEADER PREMIUM */
 header{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1600");
 background-size:cover;
-background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -84,13 +79,27 @@ section{
 max-width:1100px;
 margin:auto;
 padding:80px 20px;
+opacity:0;
+transform:translateY(30px);
+transition:0.6s;
+}
+
+section.visible{
+opacity:1;
+transform:translateY(0);
 }
 
 .card{
 background:white;
 padding:30px;
 border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* IMAGES */
+img{
+max-width:100%;
+border-radius:12px;
 }
 
 /* PROFIL */
@@ -100,24 +109,16 @@ width:220px;
 height:220px;
 border-radius:50%;
 object-fit:cover;
-margin-bottom:20px;
-}
-
-/* IMAGES */
-.image-full{
-width:100%;
-border-radius:12px;
-margin-top:20px;
 }
 
 /* AUDIO */
 .audio-btn{
-margin-bottom:15px;
 background:#222;
 color:white;
 border:none;
 padding:10px;
 border-radius:20px;
+margin-bottom:15px;
 cursor:pointer;
 }
 
@@ -136,7 +137,7 @@ font-weight:bold;
 
 /* FOOTER */
 footer{
-background:#222;
+background:#111;
 color:white;
 text-align:center;
 padding:40px;
@@ -148,121 +149,89 @@ padding:40px;
 
 <body>
 
-<a href="#main" class="skip-link">Aller au contenu</a>
-
 <header>
 <div>
-
 <h1>M. BIHAN – Constellation Systémique Vannes</h1>
-
-<p>Thérapeute spécialisé en génogramme et constellation systémique</p>
-
-<p>RDV par SMS au <strong>07 82 82 47 90</strong></p>
-
-<p><strong>Vannes • Arradon • Saint-Avé • Baden • Ploeren • Séné • Theix • Morbihan</strong></p>
-
+<p>Thérapeute en génogramme & accompagnement transgénérationnel</p>
+<p><strong>RDV par SMS : 07 82 82 47 90</strong></p>
 <a href="sms:+33782824790" class="btn">📩 Prendre RDV</a>
-
 </div>
 </header>
 
-<main id="main">
+<main>
 
 <section>
 <h2>Présentation</h2>
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card">
-
-<p>
 Thérapeute spécialisé en constellation systémique et génogramme à Vannes.
-</p>
-
-<p>
-Accompagnement individuel pour explorer et comprendre les schémas familiaux,
-les blocages émotionnels et les transmissions transgénérationnelles.
-</p>
-
-<p>
-Consultation sur rendez-vous uniquement. Prise de rendez-vous rapide par SMS.
-</p>
-
+Accompagnement individuel pour comprendre les schémas familiaux et les blocages émotionnels.
+Consultation uniquement sur rendez-vous.
 </div>
 </section>
 
 <section>
 <h2>Votre thérapeute</h2>
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card profil">
-
-<img src="Therapeute-Constellation-VANNES.jpeg" alt="Thérapeute Vannes">
-
+<img src="images/therapeute.jpg" alt="Thérapeute Vannes">
 <p>
 Plus de 30 ans d'expérience dans l'accompagnement.
-Approche humaine, profonde et personnalisée.
+Approche profonde, humaine et personnalisée.
 </p>
-
 </div>
 </section>
 
 <section>
 <h2>Cabinet</h2>
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card">
-
-<img src="Cabinet-Thérapie-Vannes.jpeg" class="image-full" alt="Cabinet thérapeute Vannes">
-
-<p>
-Espace calme, confidentiel et propice au travail thérapeutique.
-</p>
-
+<img src="images/cabinet.jpg" alt="Cabinet thérapeute Vannes">
+<p>Espace calme, confidentiel et accessible.</p>
 </div>
 </section>
 
-<section id="rdv">
+<section>
 <h2>Prendre rendez-vous</h2>
-
-<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
-
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card">
 
-📩 Envoyer un SMS au <strong>07 82 82 47 90</strong><br><br>
+📩 SMS au <strong>07 82 82 47 90</strong><br><br>
 
-Merci de préciser :<br>
-- Votre nom<br>
-- Votre adresse précise<br>
-- Motif de consultation<br>
-- Dernière consultation psychologue<br>
-- Dernière consultation médecin<br><br>
-
-Règlement par virement bancaire privilégié.<br>
-IBAN transmis après confirmation.
+Merci de préciser :
+<ul>
+<li>Nom</li>
+<li>Adresse</li>
+<li>Motif</li>
+<li>Dernière consultation</li>
+</ul>
 
 </div>
 </section>
 
-<section id="tarifs">
+<section>
 <h2>Tarifs</h2>
-
-<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter les tarifs</button>
-
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card">
 
-<p><strong>Constellation systémique individuelle</strong><br>50 min – <strong>80 €</strong></p>
+<strong>Constellation systémique</strong><br>
+50 min – 80€<br><br>
 
-<p><strong>Génogramme approfondi</strong><br>2h30 – <strong>150 €</strong></p>
+<strong>Génogramme</strong><br>
+2h30 – 150€
 
 </div>
 </section>
 
 <section>
 <h2>Localisation</h2>
-
-<button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
-
+<button class="audio-btn" onclick="lire(this)">🔊 Écouter</button>
 <div class="card">
 
-<strong>ESPACES HORIZON</strong><br>
-Rez-de-jardin – Appartement 006<br>
-25 rue Pierre Ache – Vannes
+ESPACES HORIZON – Appartement 006<br>
+25 rue Pierre Ache – Vannes<br>
 
-<img src="Interphone-N°6-pour-CONSTELLER-Vannes.jpeg" class="image-full" alt="Interphone résidence Vannes">
+<img src="images/interphone.jpg" alt="Interphone résidence">
 
 </div>
 
@@ -273,57 +242,47 @@ width="100%" height="350"></iframe>
 
 <section>
 <h2>Avis clients</h2>
-
 <div class="card" style="text-align:center;">
 
 <a href="https://g.page/r/CTsV_n9u4FwMEAE/review" target="_blank" class="btn">
-⭐ Voir les avis Google
+⭐ Laisser un avis Google
 </a>
 
 </div>
 </section>
 
-<section>
-<h2>FAQ – Thérapeute Vannes</h2>
-
-<div class="card">
-
-<strong>Constellation systémique : pourquoi ?</strong><br>
-Comprendre les blocages et libérer les schémas familiaux.<br><br>
-
-<strong>Génogramme : à quoi ça sert ?</strong><br>
-Mettre en lumière les répétitions transgénérationnelles.<br><br>
-
-<strong>Où consulter ?</strong><br>
-Cabinet Espaces Horizon – Vannes.
-
-</div>
-
-</section>
-
 </main>
 
 <footer>
-
 M. BIHAN – Constellation systémique Vannes<br>
 © 2026
-
 </footer>
 
 <a href="sms:+33782824790" class="sms-float">📩 SMS</a>
 
 <script>
-function lireTexte(btn){
-let zone = btn.nextElementSibling;
-let texte = zone.innerText;
 
+/* AUDIO */
+function lire(btn){
+let texte = btn.nextElementSibling.innerText;
 let speech = new SpeechSynthesisUtterance(texte);
 speech.lang="fr-FR";
 speech.rate=0.95;
-
 speechSynthesis.cancel();
 speechSynthesis.speak(speech);
 }
+
+/* ANIMATION SCROLL */
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("visible");
+}
+});
+});
+
 </script>
 
 </body>
