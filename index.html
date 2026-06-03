@@ -102,11 +102,35 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .card-right {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
         /* PROFIL */
         .profil {
             text-align: center;
+            margin: auto;
+            align-items: center;
         }
 
         .profil img {
@@ -202,6 +226,112 @@
         </section>
 
         <section>
+            <h2>Génogramme</h2>
+            <button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
+
+            <div class="card">
+                <h3>Explorer son histoire familiale pour mieux comprendre son présent?</h3>
+
+                <p>
+                    Selon les principes de l'approche systémique, aucun être humain n'est une entité isolée. Chacun de
+                    nous est le fruit d'une histoire familiale, d'un héritage émotionnel et relationnel qui s'inscrit
+                    dans un système complexe de transmissions conscientes et inconscientes.
+                    <br><br>
+
+                    Le génogramme est un outil d'exploration et de compréhension qui permet de représenter visuellement
+                    l'histoire familiale sur plusieurs générations. Il met en lumière les liens, les événements
+                    marquants, les répétitions et les dynamiques qui influencent parfois nos choix, nos comportements et
+                    nos relations sans que nous en ayons pleinement conscience.
+                </p>
+                <h3>Cheminer vers une meilleure compréhension de son héritage émotionnel</h3>
+                <p>
+                    Le génogramme constitue une véritable interface entre le passé et le présent.<br><br>
+
+                    Il permet de rendre visible un héritage souvent silencieux en révélant les schémas relationnels, les
+                    croyances, les loyautés familiales invisibles et les charges émotionnelles qui peuvent se
+                    transmettre d'une génération à l'autre.<br><br>
+
+                    À travers cette cartographie familiale, chacun peut progressivement identifier ce qui lui appartient
+                    réellement et ce qui relève de transmissions familiales parfois anciennes.
+                </p>
+                <h3>Transformer le poids du passé en ressource de développement personnel</h3>
+                <p>
+
+                    En documentant les événements significatifs de l'histoire familiale sur quatre à cinq générations,
+                    le génogramme permet de :
+
+                <ul>
+                    <li>mieux comprendre ses réactions émotionnelles</li>
+                    <li>distinguer les émotions personnelles de celles héritées du système familial</li>
+                    <li>identifier les répétitions transgénérationnelles</li>
+                    <li>mettre en lumière les loyautés invisibles</li>
+                    <li>comprendre certains choix de vie, difficultés relationnelles ou blocages récurrents</li>
+                    <li>développer une plus grande liberté intérieure.</li>
+                </ul>
+
+                Cette démarche favorise une meilleure connaissance de soi et ouvre la voie à des choix plus
+                conscients et plus alignés avec ses aspirations profondes.
+                </p>
+                <h3>Ce que le génogramme peut révéler</h3>
+                <p>
+                    L'exploration du génogramme permet notamment d'identifier :
+                <ul>
+                    <li>les syndromes d'anniversaire</li>
+                    <li>les répétitions de scénarios de vie</li>
+                    <li>les deuils non élaborés</li>
+                    <li>les secrets de famille et les non-dits</li>
+                    <li>les guerres, exils, migrations et déplacements géographiques</li>
+                    <li>les changements religieux ou culturels</li>
+                    <li>les attentats, catastrophes ou traumatismes collectifs</li>
+                    <li>les situations de veuvage ou de remariage</li>
+                    <li>les conflits liés aux héritages, spoliations ou déshéritements</li>
+                    <li>les faillites, pertes professionnelles ou périodes de chômage</li>
+                    <li>les interruptions de grossesse (IVG), fausses couches et enfants morts-nés</li>
+                    <li>les décès précoces ou soudains</li>
+                    <li>les parcours de procréation médicalement assistée (FIV)</li>
+                    <li>les naissances sous X </li>
+                    <li>les adoptions </li>
+                    <li>les abandons </li>
+                    <li>les filiations méconnues ou non reconnues.</li>
+                </ul>
+
+
+                « Tant que vous n'aurez pas rendu l'inconscient conscient, il dirigera votre vie et vous
+                l'appellerez destin. »<br><br>
+
+                Carl Gustav Jung
+                </p>
+                <h3> Les bénéfices du génogramme</h3>
+                <p>
+
+                    Le génogramme offre souvent une compréhension nouvelle et immédiate des dynamiques
+                    familiales.<br><br>
+
+                    Il permet :<br>
+
+                    ✔ d'identifier rapidement les schémas répétitifs<br>
+
+                    ✔ de mettre du sens sur certaines difficultés personnelles ou relationnelles<br>
+
+                    ✔ d'améliorer la compréhension de son histoire familiale<br>
+
+                    ✔ de favoriser la réconciliation avec son parcours de vie<br>
+
+                    ✔ de renforcer son autonomie émotionnelle<br>
+
+                    ✔ d'ouvrir de nouvelles perspectives d'évolution personnelle.<br><br>
+
+                    Les liens et les mécanismes qui semblaient jusqu'alors invisibles deviennent progressivement
+                    perceptibles, offrant un regard plus clair sur soi-même et sur son histoire familiale.<br><br>
+
+                    Comprendre son histoire familiale, c'est souvent commencer à écrire son avenir avec davantage de
+                    liberté et de conscience.
+                </p>
+
+            </div>
+        </section>
+
+        <section>
             <h2>Votre thérapeute</h2>
             <div class="card profil">
 
@@ -209,7 +339,7 @@
 
                 <p>
                     Plus de 30 ans d'expérience dans l'accompagnement.
-                    Approche humaine, profonde et personnalisée.
+                    Approche profondémment humaine et personnalisée.
                 </p>
 
             </div>
@@ -235,8 +365,14 @@
             <button class="audio-btn" onclick="lireTexte(this)">🔊 Écouter</button>
 
             <div class="card">
+                <div class="row">
+                    <div class="card-left">📩 Envoyer un SMS au <strong>07 82 82 47 90</strong><br><br></div>
+                    <div class="card-right">
+                        scannez le QR code
+                        <img src="images/qr-code.jpeg" class="image-full" alt="QR code prise de rendez-vous">
+                    </div>
+                </div>
 
-                📩 Envoyer un SMS au <strong>07 82 82 47 90</strong><br><br>
 
                 Merci de préciser :<br>
                 - Votre nom<br>
@@ -279,7 +415,9 @@
 
                 <strong>ESPACES HORIZON</strong><br>
                 Rez-de-jardin – Appartement 006<br>
-                25 rue Pierre Ache – Vannes
+                25 rue Pierre Ache – Vannes<br>
+                <strong>Pour entrer ouverture automatique en sonnant à l'interphone 006</strong><br>
+
 
                 <img src="images/Interphone.jpeg" class="image-full" alt="Interphone résidence Vannes">
 
